@@ -15,7 +15,7 @@ import Product from './pages/Product';
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename='process.env.PUBLIC_URL'>
       <Navbar />
       <Routes>
         <Route path='/' element={<Shop/>}/>
